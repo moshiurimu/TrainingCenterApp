@@ -25,7 +25,6 @@ namespace TrainingCenterApp.UI
             Student aStudent = anEnrollmentBll.Find(regNoTextBox.Text);
             nameTextBox.Text = aStudent.Name;
             emailTextBox.Text = aStudent.Email;
-
         }
     }
 }

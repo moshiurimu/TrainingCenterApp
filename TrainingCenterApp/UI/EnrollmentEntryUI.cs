@@ -16,5 +16,10 @@ namespace TrainingCenterApp.UI
         {
             InitializeComponent();
         }
+
+        private void findButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

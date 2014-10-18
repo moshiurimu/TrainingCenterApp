@@ -28,57 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.emrolledCourseGroupBox = new System.Windows.Forms.GroupBox();
-            this.emrolledCourseDataGridView = new System.Windows.Forms.DataGridView();
+            this.enrolledCourseGroupBox = new System.Windows.Forms.GroupBox();
+            this.enrolledCourseDataGridView = new System.Windows.Forms.DataGridView();
             this.courseEmrollmentGroupBox = new System.Windows.Forms.GroupBox();
-            this.enrollmenDtateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.enrollmentDtateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.courseComboBox = new System.Windows.Forms.ComboBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.regnoTextBox = new System.Windows.Forms.TextBox();
+            this.regNoTextBox = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.emrollButton = new System.Windows.Forms.Button();
+            this.enrollButton = new System.Windows.Forms.Button();
             this.findButton = new System.Windows.Forms.Button();
-            this.emrolledCourseGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.emrolledCourseDataGridView)).BeginInit();
+            this.enrolledCourseGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.enrolledCourseDataGridView)).BeginInit();
             this.courseEmrollmentGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // emrolledCourseGroupBox
+            // enrolledCourseGroupBox
             // 
-            this.emrolledCourseGroupBox.Controls.Add(this.emrolledCourseDataGridView);
-            this.emrolledCourseGroupBox.Location = new System.Drawing.Point(12, 164);
-            this.emrolledCourseGroupBox.Name = "emrolledCourseGroupBox";
-            this.emrolledCourseGroupBox.Size = new System.Drawing.Size(518, 189);
-            this.emrolledCourseGroupBox.TabIndex = 1;
-            this.emrolledCourseGroupBox.TabStop = false;
-            this.emrolledCourseGroupBox.Text = "Emrolled Course";
+            this.enrolledCourseGroupBox.Controls.Add(this.enrolledCourseDataGridView);
+            this.enrolledCourseGroupBox.Location = new System.Drawing.Point(12, 164);
+            this.enrolledCourseGroupBox.Name = "enrolledCourseGroupBox";
+            this.enrolledCourseGroupBox.Size = new System.Drawing.Size(518, 189);
+            this.enrolledCourseGroupBox.TabIndex = 1;
+            this.enrolledCourseGroupBox.TabStop = false;
+            this.enrolledCourseGroupBox.Text = "Enrolled Course";
             // 
-            // emrolledCourseDataGridView
+            // enrolledCourseDataGridView
             // 
-            this.emrolledCourseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.emrolledCourseDataGridView.Location = new System.Drawing.Point(16, 19);
-            this.emrolledCourseDataGridView.Name = "emrolledCourseDataGridView";
-            this.emrolledCourseDataGridView.Size = new System.Drawing.Size(485, 160);
-            this.emrolledCourseDataGridView.TabIndex = 0;
+            this.enrolledCourseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.enrolledCourseDataGridView.Location = new System.Drawing.Point(16, 19);
+            this.enrolledCourseDataGridView.Name = "enrolledCourseDataGridView";
+            this.enrolledCourseDataGridView.Size = new System.Drawing.Size(485, 160);
+            this.enrolledCourseDataGridView.TabIndex = 0;
             // 
             // courseEmrollmentGroupBox
             // 
-            this.courseEmrollmentGroupBox.Controls.Add(this.enrollmenDtateTimePicker);
+            this.courseEmrollmentGroupBox.Controls.Add(this.enrollmentDtateTimePicker);
             this.courseEmrollmentGroupBox.Controls.Add(this.courseComboBox);
             this.courseEmrollmentGroupBox.Controls.Add(this.emailTextBox);
             this.courseEmrollmentGroupBox.Controls.Add(this.nameTextBox);
-            this.courseEmrollmentGroupBox.Controls.Add(this.regnoTextBox);
+            this.courseEmrollmentGroupBox.Controls.Add(this.regNoTextBox);
             this.courseEmrollmentGroupBox.Controls.Add(this.label);
             this.courseEmrollmentGroupBox.Controls.Add(this.label4);
             this.courseEmrollmentGroupBox.Controls.Add(this.label3);
             this.courseEmrollmentGroupBox.Controls.Add(this.label2);
             this.courseEmrollmentGroupBox.Controls.Add(this.label1);
-            this.courseEmrollmentGroupBox.Controls.Add(this.emrollButton);
+            this.courseEmrollmentGroupBox.Controls.Add(this.enrollButton);
             this.courseEmrollmentGroupBox.Controls.Add(this.findButton);
             this.courseEmrollmentGroupBox.Location = new System.Drawing.Point(12, 3);
             this.courseEmrollmentGroupBox.Name = "courseEmrollmentGroupBox";
@@ -87,12 +87,12 @@
             this.courseEmrollmentGroupBox.TabStop = false;
             this.courseEmrollmentGroupBox.Text = "Course Emrollment";
             // 
-            // enrollmenDtateTimePicker
+            // enrollmentDtateTimePicker
             // 
-            this.enrollmenDtateTimePicker.Location = new System.Drawing.Point(159, 123);
-            this.enrollmenDtateTimePicker.Name = "enrollmenDtateTimePicker";
-            this.enrollmenDtateTimePicker.Size = new System.Drawing.Size(228, 20);
-            this.enrollmenDtateTimePicker.TabIndex = 4;
+            this.enrollmentDtateTimePicker.Location = new System.Drawing.Point(159, 123);
+            this.enrollmentDtateTimePicker.Name = "enrollmentDtateTimePicker";
+            this.enrollmentDtateTimePicker.Size = new System.Drawing.Size(228, 20);
+            this.enrollmentDtateTimePicker.TabIndex = 4;
             // 
             // courseComboBox
             // 
@@ -117,17 +117,17 @@
             this.nameTextBox.Size = new System.Drawing.Size(228, 20);
             this.nameTextBox.TabIndex = 2;
             // 
-            // regnoTextBox
+            // regNoTextBox
             // 
-            this.regnoTextBox.Location = new System.Drawing.Point(159, 15);
-            this.regnoTextBox.Name = "regnoTextBox";
-            this.regnoTextBox.Size = new System.Drawing.Size(133, 20);
-            this.regnoTextBox.TabIndex = 0;
+            this.regNoTextBox.Location = new System.Drawing.Point(159, 15);
+            this.regNoTextBox.Name = "regNoTextBox";
+            this.regNoTextBox.Size = new System.Drawing.Size(133, 20);
+            this.regNoTextBox.TabIndex = 0;
             // 
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(55, 123);
+            this.label.Location = new System.Drawing.Point(55, 127);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(84, 13);
             this.label.TabIndex = 1;
@@ -169,14 +169,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Reg No";
             // 
-            // emrollButton
+            // enrollButton
             // 
-            this.emrollButton.Location = new System.Drawing.Point(410, 121);
-            this.emrollButton.Name = "emrollButton";
-            this.emrollButton.Size = new System.Drawing.Size(75, 23);
-            this.emrollButton.TabIndex = 5;
-            this.emrollButton.Text = "Enroll";
-            this.emrollButton.UseVisualStyleBackColor = true;
+            this.enrollButton.Location = new System.Drawing.Point(410, 122);
+            this.enrollButton.Name = "enrollButton";
+            this.enrollButton.Size = new System.Drawing.Size(75, 23);
+            this.enrollButton.TabIndex = 5;
+            this.enrollButton.Text = "Enroll";
+            this.enrollButton.UseVisualStyleBackColor = true;
             // 
             // findButton
             // 
@@ -186,18 +186,19 @@
             this.findButton.TabIndex = 1;
             this.findButton.Text = "Find";
             this.findButton.UseVisualStyleBackColor = true;
+            this.findButton.Click += new System.EventHandler(this.findButton_Click);
             // 
             // EnrollmentEntryUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 356);
-            this.Controls.Add(this.emrolledCourseGroupBox);
+            this.Controls.Add(this.enrolledCourseGroupBox);
             this.Controls.Add(this.courseEmrollmentGroupBox);
             this.Name = "EnrollmentEntryUI";
             this.Text = "EnrollmentEntryUI";
-            this.emrolledCourseGroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.emrolledCourseDataGridView)).EndInit();
+            this.enrolledCourseGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.enrolledCourseDataGridView)).EndInit();
             this.courseEmrollmentGroupBox.ResumeLayout(false);
             this.courseEmrollmentGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -206,20 +207,20 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox emrolledCourseGroupBox;
-        private System.Windows.Forms.DataGridView emrolledCourseDataGridView;
+        private System.Windows.Forms.GroupBox enrolledCourseGroupBox;
+        private System.Windows.Forms.DataGridView enrolledCourseDataGridView;
         private System.Windows.Forms.GroupBox courseEmrollmentGroupBox;
-        private System.Windows.Forms.DateTimePicker enrollmenDtateTimePicker;
+        private System.Windows.Forms.DateTimePicker enrollmentDtateTimePicker;
         private System.Windows.Forms.ComboBox courseComboBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
-        private System.Windows.Forms.TextBox regnoTextBox;
+        private System.Windows.Forms.TextBox regNoTextBox;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button emrollButton;
+        private System.Windows.Forms.Button enrollButton;
         private System.Windows.Forms.Button findButton;
     }
 }

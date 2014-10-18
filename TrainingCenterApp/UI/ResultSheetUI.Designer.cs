@@ -41,10 +41,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.findButton = new System.Windows.Forms.Button();
             this.resultGroupBox = new System.Windows.Forms.GroupBox();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.resultDataGridView = new System.Windows.Forms.DataGridView();
             this.StudentInformationGroupBox.SuspendLayout();
             this.resultGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // StudentInformationGroupBox
@@ -159,7 +159,7 @@
             // 
             // resultGroupBox
             // 
-            this.resultGroupBox.Controls.Add(this.dataGridView);
+            this.resultGroupBox.Controls.Add(this.resultDataGridView);
             this.resultGroupBox.Location = new System.Drawing.Point(12, 124);
             this.resultGroupBox.Name = "resultGroupBox";
             this.resultGroupBox.Size = new System.Drawing.Size(510, 164);
@@ -167,13 +167,13 @@
             this.resultGroupBox.TabStop = false;
             this.resultGroupBox.Text = "Result";
             // 
-            // dataGridView
+            // resultDataGridView
             // 
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(11, 22);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(487, 130);
-            this.dataGridView.TabIndex = 0;
+            this.resultDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.resultDataGridView.Location = new System.Drawing.Point(11, 22);
+            this.resultDataGridView.Name = "resultDataGridView";
+            this.resultDataGridView.Size = new System.Drawing.Size(487, 130);
+            this.resultDataGridView.TabIndex = 0;
             // 
             // ResultSheetUI
             // 
@@ -187,7 +187,7 @@
             this.StudentInformationGroupBox.ResumeLayout(false);
             this.StudentInformationGroupBox.PerformLayout();
             this.resultGroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,6 +207,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button findButton;
         private System.Windows.Forms.GroupBox resultGroupBox;
-        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.DataGridView resultDataGridView;
     }
 }

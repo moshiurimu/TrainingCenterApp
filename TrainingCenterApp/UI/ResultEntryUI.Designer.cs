@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ResultPublishDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.resultPublishDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.courseComboBox = new System.Windows.Forms.ComboBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.sourseTextBox = new System.Windows.Forms.TextBox();
+            this.scoreTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.regnoTextBox = new System.Windows.Forms.TextBox();
+            this.regNoTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.viewResultsheetButton = new System.Windows.Forms.Button();
+            this.viewResultSheetButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.findButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ResultPublishDateTimePicker
+            // resultPublishDateTimePicker
             // 
-            this.ResultPublishDateTimePicker.Location = new System.Drawing.Point(182, 162);
-            this.ResultPublishDateTimePicker.Name = "ResultPublishDateTimePicker";
-            this.ResultPublishDateTimePicker.Size = new System.Drawing.Size(231, 20);
-            this.ResultPublishDateTimePicker.TabIndex = 7;
+            this.resultPublishDateTimePicker.Location = new System.Drawing.Point(182, 162);
+            this.resultPublishDateTimePicker.Name = "resultPublishDateTimePicker";
+            this.resultPublishDateTimePicker.Size = new System.Drawing.Size(231, 20);
+            this.resultPublishDateTimePicker.TabIndex = 7;
             // 
             // courseComboBox
             // 
@@ -68,12 +68,12 @@
             this.emailTextBox.Size = new System.Drawing.Size(313, 20);
             this.emailTextBox.TabIndex = 4;
             // 
-            // sourseTextBox
+            // scoreTextBox
             // 
-            this.sourseTextBox.Location = new System.Drawing.Point(182, 133);
-            this.sourseTextBox.Name = "sourseTextBox";
-            this.sourseTextBox.Size = new System.Drawing.Size(312, 20);
-            this.sourseTextBox.TabIndex = 6;
+            this.scoreTextBox.Location = new System.Drawing.Point(182, 133);
+            this.scoreTextBox.Name = "scoreTextBox";
+            this.scoreTextBox.Size = new System.Drawing.Size(312, 20);
+            this.scoreTextBox.TabIndex = 6;
             // 
             // nameTextBox
             // 
@@ -82,12 +82,12 @@
             this.nameTextBox.Size = new System.Drawing.Size(313, 20);
             this.nameTextBox.TabIndex = 3;
             // 
-            // regnoTextBox
+            // regNoTextBox
             // 
-            this.regnoTextBox.Location = new System.Drawing.Point(181, 15);
-            this.regnoTextBox.Name = "regnoTextBox";
-            this.regnoTextBox.Size = new System.Drawing.Size(94, 20);
-            this.regnoTextBox.TabIndex = 0;
+            this.regNoTextBox.Location = new System.Drawing.Point(181, 15);
+            this.regNoTextBox.Name = "regNoTextBox";
+            this.regNoTextBox.Size = new System.Drawing.Size(94, 20);
+            this.regNoTextBox.TabIndex = 0;
             // 
             // label5
             // 
@@ -101,11 +101,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(117, 137);
+            this.label6.Location = new System.Drawing.Point(105, 136);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 21;
-            this.label6.Text = "Sourse";
+            this.label6.Text = "Score (%)";
             // 
             // label4
             // 
@@ -143,14 +143,14 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Reg No";
             // 
-            // viewResultsheetButton
+            // viewResultSheetButton
             // 
-            this.viewResultsheetButton.Location = new System.Drawing.Point(369, 14);
-            this.viewResultsheetButton.Name = "viewResultsheetButton";
-            this.viewResultsheetButton.Size = new System.Drawing.Size(125, 23);
-            this.viewResultsheetButton.TabIndex = 2;
-            this.viewResultsheetButton.Text = "View Result Sheet";
-            this.viewResultsheetButton.UseVisualStyleBackColor = true;
+            this.viewResultSheetButton.Location = new System.Drawing.Point(369, 14);
+            this.viewResultSheetButton.Name = "viewResultSheetButton";
+            this.viewResultSheetButton.Size = new System.Drawing.Size(125, 23);
+            this.viewResultSheetButton.TabIndex = 2;
+            this.viewResultSheetButton.Text = "View Result Sheet";
+            this.viewResultSheetButton.UseVisualStyleBackColor = true;
             // 
             // saveButton
             // 
@@ -175,19 +175,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 195);
-            this.Controls.Add(this.ResultPublishDateTimePicker);
+            this.Controls.Add(this.resultPublishDateTimePicker);
             this.Controls.Add(this.courseComboBox);
             this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(this.sourseTextBox);
+            this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(this.regnoTextBox);
+            this.Controls.Add(this.regNoTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.viewResultsheetButton);
+            this.Controls.Add(this.viewResultSheetButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.findButton);
             this.Name = "ResultEntryUI";
@@ -199,19 +199,19 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker ResultPublishDateTimePicker;
+        private System.Windows.Forms.DateTimePicker resultPublishDateTimePicker;
         private System.Windows.Forms.ComboBox courseComboBox;
         private System.Windows.Forms.TextBox emailTextBox;
-        private System.Windows.Forms.TextBox sourseTextBox;
+        private System.Windows.Forms.TextBox scoreTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
-        private System.Windows.Forms.TextBox regnoTextBox;
+        private System.Windows.Forms.TextBox regNoTextBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button viewResultsheetButton;
+        private System.Windows.Forms.Button viewResultSheetButton;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button findButton;
     }
