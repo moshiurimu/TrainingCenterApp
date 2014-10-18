@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.StudentInformationGroupBox = new System.Windows.Forms.GroupBox();
-            this.AvarageScoreTextBox = new System.Windows.Forms.TextBox();
+            this.avarageScoreTextBox = new System.Windows.Forms.TextBox();
             this.gradeLetterTextBox = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.regnoTextBox = new System.Windows.Forms.TextBox();
+            this.regNoTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,13 +49,13 @@
             // 
             // StudentInformationGroupBox
             // 
-            this.StudentInformationGroupBox.Controls.Add(this.AvarageScoreTextBox);
+            this.StudentInformationGroupBox.Controls.Add(this.avarageScoreTextBox);
             this.StudentInformationGroupBox.Controls.Add(this.gradeLetterTextBox);
             this.StudentInformationGroupBox.Controls.Add(this.label);
             this.StudentInformationGroupBox.Controls.Add(this.label4);
             this.StudentInformationGroupBox.Controls.Add(this.emailTextBox);
             this.StudentInformationGroupBox.Controls.Add(this.nameTextBox);
-            this.StudentInformationGroupBox.Controls.Add(this.regnoTextBox);
+            this.StudentInformationGroupBox.Controls.Add(this.regNoTextBox);
             this.StudentInformationGroupBox.Controls.Add(this.label3);
             this.StudentInformationGroupBox.Controls.Add(this.label2);
             this.StudentInformationGroupBox.Controls.Add(this.label1);
@@ -67,12 +67,12 @@
             this.StudentInformationGroupBox.TabStop = false;
             this.StudentInformationGroupBox.Text = "Student Information";
             // 
-            // AvarageScoreTextBox
+            // avarageScoreTextBox
             // 
-            this.AvarageScoreTextBox.Location = new System.Drawing.Point(374, 25);
-            this.AvarageScoreTextBox.Name = "AvarageScoreTextBox";
-            this.AvarageScoreTextBox.Size = new System.Drawing.Size(119, 20);
-            this.AvarageScoreTextBox.TabIndex = 4;
+            this.avarageScoreTextBox.Location = new System.Drawing.Point(374, 25);
+            this.avarageScoreTextBox.Name = "avarageScoreTextBox";
+            this.avarageScoreTextBox.Size = new System.Drawing.Size(119, 20);
+            this.avarageScoreTextBox.TabIndex = 4;
             // 
             // gradeLetterTextBox
             // 
@@ -113,12 +113,12 @@
             this.nameTextBox.Size = new System.Drawing.Size(211, 20);
             this.nameTextBox.TabIndex = 2;
             // 
-            // regnoTextBox
+            // regNoTextBox
             // 
-            this.regnoTextBox.Location = new System.Drawing.Point(72, 25);
-            this.regnoTextBox.Name = "regnoTextBox";
-            this.regnoTextBox.Size = new System.Drawing.Size(89, 20);
-            this.regnoTextBox.TabIndex = 0;
+            this.regNoTextBox.Location = new System.Drawing.Point(72, 25);
+            this.regNoTextBox.Name = "regNoTextBox";
+            this.regNoTextBox.Size = new System.Drawing.Size(89, 20);
+            this.regNoTextBox.TabIndex = 0;
             // 
             // label3
             // 
@@ -155,6 +155,7 @@
             this.findButton.TabIndex = 1;
             this.findButton.Text = "Find";
             this.findButton.UseVisualStyleBackColor = true;
+            this.findButton.Click += new System.EventHandler(this.findButton_Click);
             // 
             // resultGroupBox
             // 
@@ -194,13 +195,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox StudentInformationGroupBox;
-        private System.Windows.Forms.TextBox AvarageScoreTextBox;
+        private System.Windows.Forms.TextBox avarageScoreTextBox;
         private System.Windows.Forms.TextBox gradeLetterTextBox;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
-        private System.Windows.Forms.TextBox regnoTextBox;
+        private System.Windows.Forms.TextBox regNoTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

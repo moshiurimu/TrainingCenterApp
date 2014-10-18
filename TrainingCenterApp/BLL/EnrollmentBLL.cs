@@ -17,8 +17,6 @@ namespace TrainingCenterApp.BLL
             anEnrollmentGateway= new EnrollmentGateway();
         }
 
-        
-
         public Student Find(string regNo)
         {
             return anEnrollmentGateway.Find(regNo);
