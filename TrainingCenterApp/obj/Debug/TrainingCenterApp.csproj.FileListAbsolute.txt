@@ -1,0 +1,25 @@
+D:\Moshiur_OOP_49\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe.config
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe.config
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csprojResolveAssemblyReference.cache
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.Properties.Resources.resources
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csproj.GenerateResource.Cache
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.pdb
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.EnrollmentEntryUI.resources
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.MainUI.resources
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultEntryUI.resources
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultSheetUI.resources
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.exe
+D:\Moshiur_OOP_49\Git FoxEye\TrainingCenterApp\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.pdb
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe.config
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.exe
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.pdb
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.pdb
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csprojResolveAssemblyReference.cache
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.Properties.Resources.resources
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csproj.GenerateResource.Cache
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.MainUI.resources
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.EnrollmentEntryUI.resources
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultEntryUI.resources
+C:\Users\Sifat Rahman\Desktop\GitProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultSheetUI.resources
