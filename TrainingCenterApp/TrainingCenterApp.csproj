@@ -46,10 +46,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\EnrollmentBLL.cs" />
+    <Compile Include="BLL\ResultBLL.cs" />
     <Compile Include="DAL\DAO\Course.cs" />
     <Compile Include="DAL\DAO\Enrollment.cs" />
+    <Compile Include="DAL\DAO\Result.cs" />
     <Compile Include="DAL\DAO\Student.cs" />
     <Compile Include="DAL\Gateway\EnrollmentGateway.cs" />
+    <Compile Include="DAL\Gateway\ResultGateway.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\EnrollmentEntryUI.cs">

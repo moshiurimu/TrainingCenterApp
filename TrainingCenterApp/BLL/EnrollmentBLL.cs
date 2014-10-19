@@ -16,9 +16,6 @@ namespace TrainingCenterApp.BLL
         {
             anEnrollmentGateway= new EnrollmentGateway();
         }
-
-        
-
         public Student Find(string regNo)
         {
             return anEnrollmentGateway.Find(regNo);
@@ -36,6 +33,11 @@ namespace TrainingCenterApp.BLL
         private bool HasThisStudentInCourse(Student aStudent)
         {
             return anEnrollmentGateway.HasThisStudentInCourse(aStudent);
+        }
+
+        public List<Course> GetAllCourse()
+        {
+            return anEnrollmentGateway.GetAllCourse();
         }
     }
 }
