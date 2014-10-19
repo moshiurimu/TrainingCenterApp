@@ -37,8 +37,9 @@ namespace TrainingCenterApp.DAL.Gateway
                     aStudent.Name = aReader[2].ToString();
                     aStudent.Email = aReader[3].ToString();
                 }
-
+                connection.Close();
             }
+            
             return aStudent;
         }
 
@@ -92,6 +93,7 @@ namespace TrainingCenterApp.DAL.Gateway
                     aCourse.Title = aReader[2].ToString();
                     courses.Add(aCourse);
                 }
+                connection.Close();
             }
             return courses;
         }

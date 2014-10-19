@@ -24,7 +24,9 @@ namespace TrainingCenterApp.UI
         }
         private void findButton_Click(object sender, EventArgs e)
         {
-
+            Student aStudent = anEnrollmentBll.Find(regNoTextBox.Text);
+            nameTextBox.Text = aStudent.Name;
+            emailTextBox.Text = aStudent.Email;
         }
         private void GetAllCourseInComboBox()
         {

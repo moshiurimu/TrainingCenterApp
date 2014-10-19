@@ -35,3 +35,15 @@ C:\Users\Badol Hossain\Desktop\TraningCenter\TrainingCenterApp\TrainingCenterApp
 C:\Users\Badol Hossain\Desktop\TraningCenter\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultEntryUI.resources
 C:\Users\Badol Hossain\Desktop\TraningCenter\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultSheetUI.resources
 C:\Users\Badol Hossain\Desktop\TraningCenter\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csproj.GenerateResource.Cache
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe.config
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.exe
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.pdb
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.pdb
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csprojResolveAssemblyReference.cache
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.Properties.Resources.resources
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.EnrollmentEntryUI.resources
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.MainUI.resources
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultEntryUI.resources
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultSheetUI.resources
+C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csproj.GenerateResource.Cache
