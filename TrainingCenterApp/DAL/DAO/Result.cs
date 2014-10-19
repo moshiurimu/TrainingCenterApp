@@ -8,8 +8,10 @@ namespace TrainingCenterApp.DAL.DAO
 {
     class Result
     {
-        public int ResultId { get; set; }
-        public float ScorePercentage { get; set; }
+        public int Id { get; set; }
+        public int StudentId { get; set; }
+        public int CourseId { get; set; }
+        public double ScorePercentage { get; set; }
         public DateTime DateTime { get; set; }
         public Student AStudent { get; set; }
         public Course ACourse { get; set; }

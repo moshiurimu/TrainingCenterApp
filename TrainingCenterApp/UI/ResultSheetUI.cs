@@ -15,6 +15,8 @@ namespace TrainingCenterApp.UI
     public partial class ResultSheetUI : Form
     {
         EnrollmentBLL anEnrollmentBll = new EnrollmentBLL();
+        ResultBLL aResultBll = new ResultBLL();
+        private ListViewItem lvi;
         public ResultSheetUI()
         {
             InitializeComponent();
@@ -25,6 +27,20 @@ namespace TrainingCenterApp.UI
             Student aStudent = anEnrollmentBll.Find(regNoTextBox.Text);
             nameTextBox.Text = aStudent.Name;
             emailTextBox.Text = aStudent.Email;
+            List<Result> results = aResultBll.GetAllResult(aStudent);
+            foreach (Result aResult in results)
+            {
+                string gradeLetter = MakeGradeLetter(aResult);
+                lvi = new ListViewItem(aResult.ACourse.Name);
+                lvi.SubItems.Add(aResult.ACourse.Title);
+                lvi.SubItems.Add(aResult.ScorePercentage.ToString());
+                lvi.SubItems.Add(gradeLetter);
+                resultListView.Items.Add(lvi);
+            }
+        }
+        private string MakeGradeLetter(Result aResult)
+        {
+            return aResultBll.MakeGradeLetter(aResult);
         }
     }
 }

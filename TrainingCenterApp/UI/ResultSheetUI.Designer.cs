@@ -41,10 +41,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.findButton = new System.Windows.Forms.Button();
             this.resultGroupBox = new System.Windows.Forms.GroupBox();
-            this.resultDataGridView = new System.Windows.Forms.DataGridView();
+            this.resultListView = new System.Windows.Forms.ListView();
+            this.courseCodeColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.courseTitleColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.scoreColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.gradeLettercolumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.StudentInformationGroupBox.SuspendLayout();
             this.resultGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.resultDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // StudentInformationGroupBox
@@ -159,7 +162,7 @@
             // 
             // resultGroupBox
             // 
-            this.resultGroupBox.Controls.Add(this.resultDataGridView);
+            this.resultGroupBox.Controls.Add(this.resultListView);
             this.resultGroupBox.Location = new System.Drawing.Point(12, 124);
             this.resultGroupBox.Name = "resultGroupBox";
             this.resultGroupBox.Size = new System.Drawing.Size(510, 164);
@@ -167,13 +170,42 @@
             this.resultGroupBox.TabStop = false;
             this.resultGroupBox.Text = "Result";
             // 
-            // resultDataGridView
+            // resultListView
             // 
-            this.resultDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.resultDataGridView.Location = new System.Drawing.Point(11, 22);
-            this.resultDataGridView.Name = "resultDataGridView";
-            this.resultDataGridView.Size = new System.Drawing.Size(487, 130);
-            this.resultDataGridView.TabIndex = 0;
+            this.resultListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.courseCodeColumnHeader,
+            this.courseTitleColumnHeader,
+            this.scoreColumnHeader,
+            this.gradeLettercolumnHeader});
+            this.resultListView.FullRowSelect = true;
+            this.resultListView.GridLines = true;
+            this.resultListView.Location = new System.Drawing.Point(17, 22);
+            this.resultListView.MultiSelect = false;
+            this.resultListView.Name = "resultListView";
+            this.resultListView.Size = new System.Drawing.Size(477, 130);
+            this.resultListView.TabIndex = 2;
+            this.resultListView.UseCompatibleStateImageBehavior = false;
+            this.resultListView.View = System.Windows.Forms.View.Details;
+            // 
+            // courseCodeColumnHeader
+            // 
+            this.courseCodeColumnHeader.Text = "Course-Code";
+            this.courseCodeColumnHeader.Width = 112;
+            // 
+            // courseTitleColumnHeader
+            // 
+            this.courseTitleColumnHeader.Text = "Course Title";
+            this.courseTitleColumnHeader.Width = 218;
+            // 
+            // scoreColumnHeader
+            // 
+            this.scoreColumnHeader.Text = "Score";
+            this.scoreColumnHeader.Width = 65;
+            // 
+            // gradeLettercolumnHeader
+            // 
+            this.gradeLettercolumnHeader.Text = "Grade Letter";
+            this.gradeLettercolumnHeader.Width = 78;
             // 
             // ResultSheetUI
             // 
@@ -187,7 +219,6 @@
             this.StudentInformationGroupBox.ResumeLayout(false);
             this.StudentInformationGroupBox.PerformLayout();
             this.resultGroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.resultDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,6 +238,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button findButton;
         private System.Windows.Forms.GroupBox resultGroupBox;
-        private System.Windows.Forms.DataGridView resultDataGridView;
+        private System.Windows.Forms.ListView resultListView;
+        private System.Windows.Forms.ColumnHeader courseCodeColumnHeader;
+        private System.Windows.Forms.ColumnHeader courseTitleColumnHeader;
+        private System.Windows.Forms.ColumnHeader scoreColumnHeader;
+        private System.Windows.Forms.ColumnHeader gradeLettercolumnHeader;
     }
 }
