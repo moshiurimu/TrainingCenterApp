@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.enrolledCourseGroupBox = new System.Windows.Forms.GroupBox();
-            this.enrolledCourseDataGridView = new System.Windows.Forms.DataGridView();
             this.courseEmrollmentGroupBox = new System.Windows.Forms.GroupBox();
             this.enrollmentDtateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.courseComboBox = new System.Windows.Forms.ComboBox();
@@ -43,28 +42,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.enrollButton = new System.Windows.Forms.Button();
             this.findButton = new System.Windows.Forms.Button();
+            this.enrolledCourseListView = new System.Windows.Forms.ListView();
+            this.courseTitleColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.enrollmentDateColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.enrolledCourseGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.enrolledCourseDataGridView)).BeginInit();
             this.courseEmrollmentGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // enrolledCourseGroupBox
             // 
-            this.enrolledCourseGroupBox.Controls.Add(this.enrolledCourseDataGridView);
+            this.enrolledCourseGroupBox.Controls.Add(this.enrolledCourseListView);
             this.enrolledCourseGroupBox.Location = new System.Drawing.Point(12, 164);
             this.enrolledCourseGroupBox.Name = "enrolledCourseGroupBox";
             this.enrolledCourseGroupBox.Size = new System.Drawing.Size(518, 189);
             this.enrolledCourseGroupBox.TabIndex = 1;
             this.enrolledCourseGroupBox.TabStop = false;
             this.enrolledCourseGroupBox.Text = "Enrolled Course";
-            // 
-            // enrolledCourseDataGridView
-            // 
-            this.enrolledCourseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.enrolledCourseDataGridView.Location = new System.Drawing.Point(16, 19);
-            this.enrolledCourseDataGridView.Name = "enrolledCourseDataGridView";
-            this.enrolledCourseDataGridView.Size = new System.Drawing.Size(485, 160);
-            this.enrolledCourseDataGridView.TabIndex = 0;
             // 
             // courseEmrollmentGroupBox
             // 
@@ -177,6 +170,7 @@
             this.enrollButton.TabIndex = 5;
             this.enrollButton.Text = "Enroll";
             this.enrollButton.UseVisualStyleBackColor = true;
+            this.enrollButton.Click += new System.EventHandler(this.enrollButton_Click);
             // 
             // findButton
             // 
@@ -188,6 +182,31 @@
             this.findButton.UseVisualStyleBackColor = true;
             this.findButton.Click += new System.EventHandler(this.findButton_Click);
             // 
+            // enrolledCourseListView
+            // 
+            this.enrolledCourseListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.courseTitleColumnHeader,
+            this.enrollmentDateColumnHeader});
+            this.enrolledCourseListView.FullRowSelect = true;
+            this.enrolledCourseListView.GridLines = true;
+            this.enrolledCourseListView.Location = new System.Drawing.Point(16, 19);
+            this.enrolledCourseListView.MultiSelect = false;
+            this.enrolledCourseListView.Name = "enrolledCourseListView";
+            this.enrolledCourseListView.Size = new System.Drawing.Size(485, 160);
+            this.enrolledCourseListView.TabIndex = 0;
+            this.enrolledCourseListView.UseCompatibleStateImageBehavior = false;
+            this.enrolledCourseListView.View = System.Windows.Forms.View.Details;
+            // 
+            // courseTitleColumnHeader
+            // 
+            this.courseTitleColumnHeader.Text = "Course-Title";
+            this.courseTitleColumnHeader.Width = 312;
+            // 
+            // enrollmentDateColumnHeader
+            // 
+            this.enrollmentDateColumnHeader.Text = "Enrollment-Date";
+            this.enrollmentDateColumnHeader.Width = 163;
+            // 
             // EnrollmentEntryUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,7 +217,6 @@
             this.Name = "EnrollmentEntryUI";
             this.Text = "EnrollmentEntryUI";
             this.enrolledCourseGroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.enrolledCourseDataGridView)).EndInit();
             this.courseEmrollmentGroupBox.ResumeLayout(false);
             this.courseEmrollmentGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -208,7 +226,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox enrolledCourseGroupBox;
-        private System.Windows.Forms.DataGridView enrolledCourseDataGridView;
         private System.Windows.Forms.GroupBox courseEmrollmentGroupBox;
         private System.Windows.Forms.DateTimePicker enrollmentDtateTimePicker;
         private System.Windows.Forms.ComboBox courseComboBox;
@@ -222,5 +239,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button enrollButton;
         private System.Windows.Forms.Button findButton;
+        private System.Windows.Forms.ListView enrolledCourseListView;
+        private System.Windows.Forms.ColumnHeader courseTitleColumnHeader;
+        private System.Windows.Forms.ColumnHeader enrollmentDateColumnHeader;
     }
 }

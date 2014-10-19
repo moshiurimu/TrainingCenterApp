@@ -15,16 +15,17 @@ namespace TrainingCenterApp.UI
     public partial class EnrollmentEntryUI : Form
     {
         private EnrollmentBLL anEnrollmentBll = new EnrollmentBLL();
+        private Enrollment anEnrollment;
+        private Student aStudent;
+
         public EnrollmentEntryUI()
         {
             InitializeComponent();
             GetAllCourseInComboBox();
-            courseComboBox.DisplayMember = "Name";
-            courseComboBox.ValueMember = "Id";
         }
         private void findButton_Click(object sender, EventArgs e)
         {
-            Student aStudent = anEnrollmentBll.Find(regNoTextBox.Text);
+            aStudent = anEnrollmentBll.Find(regNoTextBox.Text);
             nameTextBox.Text = aStudent.Name;
             emailTextBox.Text = aStudent.Email;
         }
@@ -35,6 +36,22 @@ namespace TrainingCenterApp.UI
             {
                 courseComboBox.Items.Add(aCourse);
             }
+            courseComboBox.DisplayMember = "Name";
+            courseComboBox.ValueMember = "Id";
+        }
+
+        private void enrollButton_Click(object sender, EventArgs e)
+        {
+            anEnrollment = new Enrollment();
+            anEnrollment.DateTime = enrollmentDtateTimePicker.Value;
+            anEnrollment.AStudent = aStudent;
+            anEnrollment.ACourse = (Course) courseComboBox.SelectedItem;
+            string msg=anEnrollmentBll.Enroll(anEnrollment);
+            MessageBox.Show(msg);
+            enrolledCourseListView.Items.Clear();
+            enrolledCourseListView.Items.Add(anEnrollmentBll.lvi);
+            
+
         }
     }
 }

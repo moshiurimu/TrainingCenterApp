@@ -28,6 +28,7 @@ namespace TrainingCenterApp.UI
             nameTextBox.Text = aStudent.Name;
             emailTextBox.Text = aStudent.Email;
             List<Result> results = aResultBll.GetAllResult(aStudent);
+            resultListView.Items.Clear();
             int scoreCount = 0;
             double total = 0, averageScore = 0;
             foreach (Result aResult in results)

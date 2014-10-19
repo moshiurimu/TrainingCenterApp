@@ -13,8 +13,7 @@ namespace TrainingCenterApp.DAL.DAO
         public string Name { get; set; }
         public string Email { get; set; }
 
-        public Student(string regNo, string name, string email)
-            : this()
+        public Student(string regNo, string name, string email): this()
         {
             RegNo = regNo;
             Name = name;

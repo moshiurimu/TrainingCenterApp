@@ -29,16 +29,6 @@ namespace TrainingCenterApp.UI
             nameTextBox.Text = aStudent.Name;
             emailTextBox.Text = aStudent.Email;
         }
-        private void GetAllCourseInComboBox()
-        {
-            List<Course> courses = anEnrollmentBll.GetAllCourse();
-            foreach (Course aCourse in courses)
-            {
-                courseComboBox.Items.Add(aCourse);
-            }
-            courseComboBox.DisplayMember = "Name";
-            courseComboBox.ValueMember = "Id";
-        }
         private void saveButton_Click(object sender, EventArgs e)
         {
             aResult = new Result();
@@ -50,6 +40,16 @@ namespace TrainingCenterApp.UI
             aResult.DateTime = resultPublishDateTimePicker.Value;
             string msg = aResultBll.Add(aResult);
             MessageBox.Show(msg);
+        }
+        private void GetAllCourseInComboBox()
+        {
+            List<Course> courses = anEnrollmentBll.GetAllCourse();
+            foreach (Course aCourse in courses)
+            {
+                courseComboBox.Items.Add(aCourse);
+            }
+            courseComboBox.DisplayMember = "Name";
+            courseComboBox.ValueMember = "Id";
         }
     }
 }
