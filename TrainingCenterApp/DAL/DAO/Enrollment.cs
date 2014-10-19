@@ -13,9 +13,16 @@ namespace TrainingCenterApp.DAL.DAO
         public Course ACourse { get; set; }
         public DateTime DateTime { get; set; }
 
-        
+        public Enrollment(Student aStudent, Course aCourse, DateTime dateTime)
+            : this()
+        {
+            AStudent = aStudent;
+            ACourse = aCourse;
+            DateTime = dateTime;
+        }
+
+        public Enrollment()
+        {
+        }
     }
-
-
-    
 }

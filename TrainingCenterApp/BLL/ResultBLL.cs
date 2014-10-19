@@ -39,22 +39,22 @@ namespace TrainingCenterApp.BLL
         {
             return aResultGateway.GetAllResult(aStudent);
         }
-        public string MakeGradeLetter(Result aResult)
+        public string MakeGradeLetter(double score)
         {
             string gradeLetter = "";
-            if (aResult.ScorePercentage >= 90)
+            if (score >= 90)
             {
                 gradeLetter = "A";
             }
-            else if (aResult.ScorePercentage >= 70 && aResult.ScorePercentage < 90)
+            else if (score >= 70 && score < 90)
             {
                 gradeLetter = "B";
             }
-            else if (aResult.ScorePercentage >= 50 && aResult.ScorePercentage < 70)
+            else if (score >= 50 && score < 70)
             {
                 gradeLetter = "C";
             }
-            else if (aResult.ScorePercentage < 50)
+            else if (score < 50)
             {
                 gradeLetter = "F";
             }

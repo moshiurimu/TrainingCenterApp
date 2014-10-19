@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.StudentInformationGroupBox = new System.Windows.Forms.GroupBox();
-            this.avarageScoreTextBox = new System.Windows.Forms.TextBox();
+            this.averageScoreTextBox = new System.Windows.Forms.TextBox();
             this.gradeLetterTextBox = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             // 
             // StudentInformationGroupBox
             // 
-            this.StudentInformationGroupBox.Controls.Add(this.avarageScoreTextBox);
+            this.StudentInformationGroupBox.Controls.Add(this.averageScoreTextBox);
             this.StudentInformationGroupBox.Controls.Add(this.gradeLetterTextBox);
             this.StudentInformationGroupBox.Controls.Add(this.label);
             this.StudentInformationGroupBox.Controls.Add(this.label4);
@@ -70,12 +70,12 @@
             this.StudentInformationGroupBox.TabStop = false;
             this.StudentInformationGroupBox.Text = "Student Information";
             // 
-            // avarageScoreTextBox
+            // averageScoreTextBox
             // 
-            this.avarageScoreTextBox.Location = new System.Drawing.Point(374, 25);
-            this.avarageScoreTextBox.Name = "avarageScoreTextBox";
-            this.avarageScoreTextBox.Size = new System.Drawing.Size(119, 20);
-            this.avarageScoreTextBox.TabIndex = 4;
+            this.averageScoreTextBox.Location = new System.Drawing.Point(374, 25);
+            this.averageScoreTextBox.Name = "averageScoreTextBox";
+            this.averageScoreTextBox.Size = new System.Drawing.Size(119, 20);
+            this.averageScoreTextBox.TabIndex = 4;
             // 
             // gradeLetterTextBox
             // 
@@ -100,7 +100,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 13);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Avarage Score(%)";
+            this.label4.Text = "Average Score(%)";
             // 
             // emailTextBox
             // 
@@ -226,7 +226,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox StudentInformationGroupBox;
-        private System.Windows.Forms.TextBox avarageScoreTextBox;
+        private System.Windows.Forms.TextBox averageScoreTextBox;
         private System.Windows.Forms.TextBox gradeLetterTextBox;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label4;

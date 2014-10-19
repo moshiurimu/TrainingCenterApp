@@ -12,5 +12,13 @@ namespace TrainingCenterApp.DAL.DAO
         public string Title { get; set; }
         public string Name { get; set; }
 
+        public Course(string title, string name): this()
+        {
+            Title = title;
+            Name = name;
+        }
+        public Course()
+        {
+        }
     }
 }

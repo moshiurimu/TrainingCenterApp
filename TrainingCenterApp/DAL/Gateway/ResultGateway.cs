@@ -57,7 +57,7 @@ namespace TrainingCenterApp.DAL.Gateway
         {
             connection.Open();
             List<Result> results = new List<Result>();
-            Result aResult = new Result();
+            Result aResult;
             string query = string.Format("SELECT * FROM result_Course_View WHERE StudentId = {0}", aStudent.Id);
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader aReader = command.ExecuteReader();
@@ -65,6 +65,7 @@ namespace TrainingCenterApp.DAL.Gateway
             {
                 while (aReader.Read())
                 {
+                    aResult = new Result();
                     aResult.Id = (int)aReader[0];
                     aResult.StudentId = (int)aReader[1];
                     aResult.CourseId = (int)aReader[2];

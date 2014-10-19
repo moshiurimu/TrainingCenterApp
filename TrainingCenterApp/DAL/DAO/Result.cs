@@ -15,5 +15,20 @@ namespace TrainingCenterApp.DAL.DAO
         public DateTime DateTime { get; set; }
         public Student AStudent { get; set; }
         public Course ACourse { get; set; }
+
+        public Result(int studentId, int courseId, double scorePercentage, DateTime dateTime, Student aStudent, Course aCourse)
+            : this()
+        {
+            StudentId = studentId;
+            CourseId = courseId;
+            ScorePercentage = scorePercentage;
+            DateTime = dateTime;
+            AStudent = aStudent;
+            ACourse = aCourse;
+        }
+
+        public Result()
+        {
+        }
     }
 }
