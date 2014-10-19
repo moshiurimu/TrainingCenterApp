@@ -26,15 +26,25 @@ namespace TrainingCenterApp.DAL.Gateway
             connection.Close();
             if (affectedrow > 0)
             {
-                return "Course enrollment successfull.";
+                return "Student Result Insert successfull.";
             }
             return "somthing wrong";
         }
 
-        public bool HasThisStudentInCourse(Course aCourse)
+        public bool HasThisStudentInCourse(Result aResult)
         {
             connection.Open();
-            string query = string.Format("SELECT *FROM Enrollment WHERE CourseID={0}", aCourse.Id);
+            string query = string.Format("SELECT *FROM t_Enrollment WHERE CourseId={0} ", aResult.ACourse.Id);
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataReader aReader = command.ExecuteReader();
+            bool Hasrow = aReader.HasRows;
+            connection.Close();
+            return Hasrow;
+        }
+        public bool HasResultPublishInCourse(Result aResult)
+        {
+            connection.Open();
+            string query = string.Format("SELECT *FROM t_Result WHERE StudentId=({0}) ", aResult.StudentId);
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader aReader = command.ExecuteReader();
             bool Hasrow = aReader.HasRows;

@@ -14,16 +14,26 @@ namespace TrainingCenterApp.BLL
 
         public string Add(Result aResult)
         {
-            if (HasThisStudentInCourse(aResult.ACourse))
+            if (HasResultPublishInCourse(aResult))
+            {
+                return "This result Already Exits In Course ";
+            }
+            if (HasThisStudentInCourse(aResult))
             {
                 return aResultGateway.Add(aResult);
             }
             return "Student Not In This Course";
         }
-        public bool HasThisStudentInCourse(Course aCourse)
+        public bool HasThisStudentInCourse(Result aResult)
         {
-            return aResultGateway.HasThisStudentInCourse(aCourse);
+            return aResultGateway.HasThisStudentInCourse(aResult);
         }
+        private bool HasResultPublishInCourse(Result aResult)
+        {
+            return aResultGateway.HasResultPublishInCourse(aResult);
+        }
+
+
         //Faez Section
         public List<Result> GetAllResult(Student aStudent)
         {

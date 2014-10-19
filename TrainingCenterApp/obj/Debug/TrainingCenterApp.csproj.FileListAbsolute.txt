@@ -47,3 +47,15 @@ C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\
 C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultEntryUI.resources
 C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultSheetUI.resources
 C:\Users\Moshiur Rahman\Documents\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csproj.GenerateResource.Cache
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe.config
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.exe
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.pdb
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.exe
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\bin\Debug\TrainingCenterApp.pdb
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csprojResolveAssemblyReference.cache
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.Properties.Resources.resources
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.EnrollmentEntryUI.resources
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.MainUI.resources
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultEntryUI.resources
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.UI.ResultSheetUI.resources
+C:\Users\Badol Hossain\Desktop\GItProject\TrainingCenterApp\TrainingCenterApp\obj\Debug\TrainingCenterApp.csproj.GenerateResource.Cache
