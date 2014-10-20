@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -16,13 +17,16 @@ namespace TrainingCenterApp.DAL.Gateway
         {
             connection = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlcon"].ConnectionString);
         }
-
         public string Add(Result aResult)
         {
             connection.Open();
-            string query = string.Format("INSERT INTO t_Result VALUES ({0},{1},{2},'{3}')", aResult.AStudent.Id, aResult.ACourse.Id, aResult.ScorePercentage, aResult.DateTime);
-            SqlCommand cmd = new SqlCommand(query, connection);
-            int affectedrow = cmd.ExecuteNonQuery();
+            string query = "INSERT INTO t_Result(StudentId,CourseId,Score,DateTime) VALUES (@0,@1,@2,@3)";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@0", aResult.AStudent.Id);
+            command.Parameters.AddWithValue("@1", aResult.ACourse.Id);
+            command.Parameters.AddWithValue("@2", aResult.ScorePercentage);
+            command.Parameters.AddWithValue("@3", aResult.DateTime);
+            int affectedrow = command.ExecuteNonQuery();
             connection.Close();
             if (affectedrow > 0)
             {
@@ -34,8 +38,9 @@ namespace TrainingCenterApp.DAL.Gateway
         public bool HasThisStudentInCourse(Result aResult)
         {
             connection.Open();
-            string query = string.Format("SELECT *FROM t_Enrollment WHERE CourseId={0} ", aResult.ACourse.Id);
+            string query = "SELECT *FROM t_Enrollment WHERE CourseId=@0";
             SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@0", aResult.ACourse.Id);
             SqlDataReader aReader = command.ExecuteReader();
             bool Hasrow = aReader.HasRows;
             connection.Close();
@@ -44,8 +49,10 @@ namespace TrainingCenterApp.DAL.Gateway
         public bool HasResultPublishInCourse(Result aResult)
         {
             connection.Open();
-            string query = string.Format("SELECT *FROM t_Result WHERE StudentId={0} AND CourseId={1}", aResult.StudentId,aResult.CourseId);
+            string query = "SELECT *FROM t_Result WHERE StudentId=@0 AND CourseId=@1";
             SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@0", aResult.StudentId);
+            command.Parameters.AddWithValue("@1", aResult.CourseId);
             SqlDataReader aReader = command.ExecuteReader();
             bool Hasrow = aReader.HasRows;
             connection.Close();

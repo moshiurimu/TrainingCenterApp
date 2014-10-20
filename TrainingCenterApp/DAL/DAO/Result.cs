@@ -25,7 +25,6 @@ namespace TrainingCenterApp.DAL.DAO
             AStudent = aStudent;
             ACourse = aCourse;
         }
-
         public Result()
         {
         }

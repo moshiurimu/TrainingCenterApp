@@ -11,7 +11,6 @@ namespace TrainingCenterApp.BLL
     class ResultBLL
     {
         private ResultGateway aResultGateway = new ResultGateway();
-
         public string Add(Result aResult)
         {
             if (HasResultPublishInCourse(aResult))
@@ -32,7 +31,6 @@ namespace TrainingCenterApp.BLL
         {
             return aResultGateway.HasResultPublishInCourse(aResult);
         }
-
 
         //Faez Section
         public List<Result> GetAllResult(Student aStudent)

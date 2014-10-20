@@ -51,5 +51,10 @@ namespace TrainingCenterApp.UI
             courseComboBox.DisplayMember = "Name";
             courseComboBox.ValueMember = "Id";
         }
+        private void viewResultSheetButton_Click(object sender, EventArgs e)
+        {
+            ResultSheetUI aResultSheetUi = new ResultSheetUI();
+            aResultSheetUi.ShowDialog();
+        }
     }
 }
