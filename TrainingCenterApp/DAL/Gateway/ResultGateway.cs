@@ -44,7 +44,7 @@ namespace TrainingCenterApp.DAL.Gateway
         public bool HasResultPublishInCourse(Result aResult)
         {
             connection.Open();
-            string query = string.Format("SELECT *FROM t_Result WHERE StudentId=({0}) ", aResult.StudentId);
+            string query = string.Format("SELECT *FROM t_Result WHERE StudentId={0} AND CourseId={1}", aResult.StudentId,aResult.CourseId);
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader aReader = command.ExecuteReader();
             bool Hasrow = aReader.HasRows;

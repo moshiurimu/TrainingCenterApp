@@ -16,7 +16,7 @@ namespace TrainingCenterApp.BLL
         {
             if (HasResultPublishInCourse(aResult))
             {
-                return "This result Already Exits In Course ";
+                return "Student Result Already Published In This Course";
             }
             if (HasThisStudentInCourse(aResult))
             {
