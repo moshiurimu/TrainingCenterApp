@@ -29,24 +29,20 @@ namespace TrainingCenterApp.UI
             emailTextBox.Text = aStudent.Email;
             List<Result> results = aResultBll.GetAllResult(aStudent);
             resultListView.Items.Clear();
-            int scoreCount = 0;
-            double total = 0, averageScore = 0;
+
             foreach (Result aResult in results)
             {
                 string gradeLetter = MakeGradeLetter(aResult.ScorePercentage);
-                total += aResult.ScorePercentage;
                 lvi = new ListViewItem(aResult.ACourse.Name);
                 lvi.SubItems.Add(aResult.ACourse.Title);
                 lvi.SubItems.Add(aResult.ScorePercentage.ToString());
                 lvi.SubItems.Add(gradeLetter);
                 resultListView.Items.Add(lvi);
-                scoreCount++;
             }
-            averageScore = total / scoreCount;
+            double averageScore = aResultBll.GetAverageScore(aStudent.Id);
             string averageGrade = MakeGradeLetter(averageScore);
             averageScoreTextBox.Text = averageScore.ToString();
             gradeLetterTextBox.Text = averageGrade;
-
         }
         private string MakeGradeLetter(double score)
         {

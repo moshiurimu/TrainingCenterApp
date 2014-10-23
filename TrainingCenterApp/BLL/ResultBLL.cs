@@ -11,11 +11,12 @@ namespace TrainingCenterApp.BLL
     class ResultBLL
     {
         private ResultGateway aResultGateway = new ResultGateway();
+
         public string Add(Result aResult)
         {
             if (HasResultPublishInCourse(aResult))
             {
-                return "Student Result Already Published In This Course";
+                return "This result Already Exits In Course ";
             }
             if (HasThisStudentInCourse(aResult))
             {
@@ -23,7 +24,7 @@ namespace TrainingCenterApp.BLL
             }
             return "Student Not In This Course";
         }
-        public bool HasThisStudentInCourse(Result aResult)
+        private bool HasThisStudentInCourse(Result aResult)
         {
             return aResultGateway.HasThisStudentInCourse(aResult);
         }
@@ -31,6 +32,7 @@ namespace TrainingCenterApp.BLL
         {
             return aResultGateway.HasResultPublishInCourse(aResult);
         }
+
 
         //Faez Section
         public List<Result> GetAllResult(Student aStudent)
@@ -59,5 +61,10 @@ namespace TrainingCenterApp.BLL
             return gradeLetter;
         }
 
+
+        public double GetAverageScore(int id)
+        {
+            return aResultGateway.GetAverageScore(id);
+        }
     }
 }

@@ -88,5 +88,13 @@ namespace TrainingCenterApp.DAL.Gateway
             connection.Close();
             return results;
         }
+        public double GetAverageScore(int id)
+        {
+            connection.Open();
+            string query = string.Format("SELECT AVG(Score) AS average FROM t_Result WHERE StudentId={0}", id);
+            SqlCommand command = new SqlCommand(query, connection);
+            double average = (double)command.ExecuteScalar();
+            return average;
+        }
     }
 }
